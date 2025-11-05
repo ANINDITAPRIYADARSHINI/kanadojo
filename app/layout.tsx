@@ -50,14 +50,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html>
       <body>
-        {isAnalyticsEnabled && (
+    {/*    {isAnalyticsEnabled && (
           <>
             <GoogleAnalytics />
             <MSClarity />
             <Analytics />
             <SpeedInsights />
           </>
-        )}
+        )} */}
         {children}
       </body>
     </html>

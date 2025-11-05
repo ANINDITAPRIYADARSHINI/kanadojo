@@ -1,4 +1,4 @@
-import {
+{/*import {
   Noto_Sans_JP,
   Zen_Maru_Gothic,
   Rampart_One,
@@ -19,17 +19,27 @@ import {
   New_Tegomin,
   Kosugi_Maru,
   Hina_Mincho,
-  Shippori_Mincho,
-  Kaisei_Decol,
-  Mochiy_Pop_One,
-  Yuji_Boku,
-  Kaisei_HarunoUmi,
-  Sawarabi_Gothic,
-  Zen_Old_Mincho,
-  Sawarabi_Mincho
-} from 'next/font/google';
+  //Shippori_Mincho,
+  //Kaisei_Decol,
+  //Mochiy_Pop_One,
+  //Yuji_Boku,
+  //Kaisei_HarunoUmi,
+  //Sawarabi_Gothic,
+  //Zen_Old_Mincho,
+  //Sawarabi_Mincho
+} from 'next/font/google';*/}
 
-const notoSansJP = Noto_Sans_JP({
+import { Mona_Sans } from 'next/font/google';
+
+const monaSans = Mona_Sans({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'sans-serif']
+});
+
+{/*const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
@@ -186,15 +196,15 @@ const hinaMincho = Hina_Mincho({
   display: 'swap',
   preload: false,
   fallback: ['system-ui', 'sans-serif']
-});
+}); */}
 
-const shipporiMincho = Shippori_Mincho({
+{/*const shipporiMincho = Shippori_Mincho({
   subsets: ['latin'],
   weight: ['400'],
   display: 'swap',
   preload: false,
   fallback: ['system-ui', 'sans-serif']
-});
+//});
 
 const kaiseiDecol = Kaisei_Decol({
   subsets: ['latin'],
@@ -250,10 +260,15 @@ const sawarabiMincho = Sawarabi_Mincho({
   display: 'swap',
   preload: false,
   fallback: ['system-ui', 'sans-serif']
-});
+});*/}
 
 const fonts = [
   {
+    name: 'Mona Sans',
+    font: monaSans
+  }
+];
+  /*{
     name: 'Zen Maru Gothic',
     font: zenMaruGothic
   },
@@ -365,7 +380,7 @@ const fonts = [
   {
     name: 'Sawarabi Mincho',
     font: sawarabiMincho
-  }
-];
+  }*/
+
 
 export default fonts;
